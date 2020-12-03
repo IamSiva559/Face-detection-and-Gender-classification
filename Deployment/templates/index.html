@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyApp</title>
+</head>
+<body>
+
+    <div class="container">
+    <h1>Gender Classification</h1>
+    <style>
+        h1 {text-align: center;
+            color: #6B0103;
+            text-align: center}
+    </style>
+    </div>
+
+    <div class="container">
+        <br>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="upload">Upload to predict</label>
+            <input type="file" id="upload" name="image" required="true">
+            <input type="submit" value="upload & predict">
+        </form>
+
+    </div>
+
+    {% if fileupload  %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" id="predict">
+                <img src="{{ url_for('static',filename='uploads/')}}{{ img_name }}" alt="" width="{{ w }}" height="300">
+            </div>
+            <div class="col-md-6" id="predict">
+                <img src="{{ url_for('static',filename='predict/')}}{{ img_name }}" alt="" width="{{ w }}" height="300">
+            </div>
+        </div>
+    </div>
+
+    <style>
+        h1 {text-align: center;
+            color: #6B0103;
+            text-align: center}
+        #predict{
+            border: 2px solid;
+            color:#6B0103;
+            text-align: center;
+        }
+    </style>
+
+
+    {% endif %}
+
+</body>
+</html>
