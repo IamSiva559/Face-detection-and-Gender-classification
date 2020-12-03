@@ -30,7 +30,7 @@ Note : to replicate this project, please download data from google drive and kee
        https://drive.google.com/file/d/1Wji7xRByWMGvNF9JPThozrNevs8j-YV_/view?usp=sharing
        
       
-   # Performance of difference machine learning model
+   # Performance of different machine learning model
    
 | Model               | Accuracy | Precision | recall | f1-score | kappa score | AUC Score |
 |---------------------|----------|-----------|--------|----------|-------------|-----------|
@@ -40,8 +40,13 @@ Note : to replicate this project, please download data from google drive and kee
 | KNN                 | 0.759    | 0.796     | 0.794  | 0.795    | 0.502       | 0.75      |
 | Logistic Regression | 0.772    | 0.796     | 0.824  | 0.81     | 0.526       | 0.84      |
 | Decision Trees      | 0.657    | 0.687     | 0.765  | 0.724    | 0.274       | 0.68      |
+| Deep learning_CNN   | 0.854    | 0.872     | 0.88   | 0.876    | 0.698       | 0.91      |
 
          
+i have build above machine learning models, out of all, SVM with PCA in which prinicipal component analysis has done before building machine leanring model is giving better result. i have chosen SVM with PCA for deployment.
+
+later i tried with Deep learning as well, it is giving compared with SVM with PCA.
+
 
        
 
