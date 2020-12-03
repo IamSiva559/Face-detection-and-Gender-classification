@@ -32,20 +32,27 @@ Note : to replicate this project, please download data from google drive and kee
       
    # Performance of different machine learning model
    
-| Model               | Accuracy | Precision | recall | f1-score | kappa score | AUC Score |
-|---------------------|----------|-----------|--------|----------|-------------|-----------|
-| SVM_without_PCA     | 0.793    | 0.784     | 0.895  | 0.836    | 0.559       | 0.9       |
-| SVM_with PCA        | 0.84     | 0.863     | 0.867  | 0.865    | 0.67        | 0.91      |
-| Naïve base          | 0.762    | 0.791     | 0.81   | 0.8      | 0.507       | 0.84      |
-| KNN                 | 0.759    | 0.796     | 0.794  | 0.795    | 0.502       | 0.75      |
-| Logistic Regression | 0.772    | 0.796     | 0.824  | 0.81     | 0.526       | 0.84      |
-| Decision Trees      | 0.657    | 0.687     | 0.765  | 0.724    | 0.274       | 0.68      |
-| Deep learning_CNN   | 0.854    | 0.872     | 0.88   | 0.876    | 0.698       | 0.91      |
+            | Model               | Accuracy | Precision | recall | f1-score | kappa score | AUC Score |
+            |---------------------|----------|-----------|--------|----------|-------------|-----------|
+            | SVM_without_PCA     | 0.793    | 0.784     | 0.895  | 0.836    | 0.559       | 0.9       |
+          **| SVM_with PCA        | 0.84     | 0.863     | 0.867  | 0.865    | 0.67        | 0.91      |**
+            | Naïve base          | 0.762    | 0.791     | 0.81   | 0.8      | 0.507       | 0.84      |
+            | KNN                 | 0.759    | 0.796     | 0.794  | 0.795    | 0.502       | 0.75      |
+            | Logistic Regression | 0.772    | 0.796     | 0.824  | 0.81     | 0.526       | 0.84      |
+            | Decision Trees      | 0.657    | 0.687     | 0.765  | 0.724    | 0.274       | 0.68      |
+            | Deep learning_CNN   | 0.854    | 0.872     | 0.88   | 0.876    | 0.698       | 0.91      |
 
          
 i have build above machine learning models, out of all, SVM with PCA in which prinicipal component analysis has done before building machine leanring model is giving better result. i have chosen SVM with PCA for deployment.
 
 later i tried with Deep learning as well, it is giving compared with SVM with PCA.
+
+
+### Sample predictions, predicted by created flask web app:
+
+<img width="960" alt="prediction1" src="https://user-images.githubusercontent.com/73870582/101014874-8e0f6800-358c-11eb-9084-361621ae3611.PNG">
+<img width="959" alt="prediction2" src="https://user-images.githubusercontent.com/73870582/101014907-98316680-358c-11eb-95eb-8299e68692d7.PNG">
+
 
 
        
